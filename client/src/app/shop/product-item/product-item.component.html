@@ -1,0 +1,20 @@
+<div class="custom-card h-100 shadow-lg" *ngIf="product">
+
+    <div class="custom-image position-relative" style="cursor: pointer;">
+        <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid custom-bg-info">
+        <div class="d-flex align-items-center justify-content-center custom-hover-overlay">
+            <button (click)="addItemToBasket()" class="btn btn-success custom-shopping-cart me-2"><i class="fas fa-cart-plus"></i></button>
+            <button routerLink="/shop/{{product.id}}" class="btn btn-primary custom-view-button">View</button>
+        </div>
+    </div>
+
+    
+    <div class="custom-card-body d-flex flex-column">
+        <a href="" class="text-decoration-none">
+            <h6 class="text-uppercase custom-product-name">
+                {{product.name}}
+            </h6>
+        </a>
+        <span class="mb-2 custom-product-price">{{product.price | currency}}</span>
+    </div>
+</div>
