@@ -38,8 +38,8 @@ public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts([
 }
 
         [HttpGet("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
+        // [ProducesResponseType(StatusCodes.Status200OK)]
+        // [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
@@ -64,3 +64,4 @@ public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts([
         }
     }
 }
+

@@ -18,7 +18,7 @@ import { OrderTotalsComponent } from './order-totals/order-totals.component';
     CarouselModule.forRoot()
   ],
   exports: [
-    PaginationModule,
+    // PaginationModule,
     // PagingHeaderComponent,
     // PagerComponent,
     CarouselModule,

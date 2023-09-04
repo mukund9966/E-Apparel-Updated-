@@ -18,10 +18,10 @@ namespace Infrastructure.Identity
                     {
                         FirstName = "Bob",
                         LastName = "Bobbity",
-                        Street = "10 The street",
-                        City = "New York",
-                        State = "NY",
-                        Zipcode = "90210"
+                        Street = "dayal sar road",
+                        City = "delhi",
+                        State = "india",
+                        Zipcode = "110032"
                     }
                 };
 

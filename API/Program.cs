@@ -1,5 +1,5 @@
 using API.Extensions;
-using API.Middleware;
+// using API.Middleware;
 using Core.Entities.Identity;
 using Infrastructue.Data;
 using Infrastructure.Data;
@@ -19,9 +19,9 @@ builder.Services.AddIdentityServices(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-app.UseMiddleware<ExceptionMiddleware>();
+// app.UseMiddleware<ExceptionMiddleware>();
 
-app.UseStatusCodePagesWithReExecute("/errors/{0}");
+// app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
 app.UseSwagger();
 app.UseSwaggerUI();
